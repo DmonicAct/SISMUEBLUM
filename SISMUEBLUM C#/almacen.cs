@@ -1,4 +1,4 @@
-public class Almacen {
+public class Almacen : Local {
 
 	private List<Productos> listaStockProd;
 	private List<int>  listaStockProdInt;
