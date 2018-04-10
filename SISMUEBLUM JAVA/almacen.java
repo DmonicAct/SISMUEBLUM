@@ -16,6 +16,6 @@ public class Almacen extends Local{
 	public void sacarProductos(Producto p, int cant){
 	}
 	
-	public void enviarAExhibicion(listaStockProd p, listStockCant c){
+	public void enviarAExhibicion(List<Producto> p, List<int> c){
 	}
 }
