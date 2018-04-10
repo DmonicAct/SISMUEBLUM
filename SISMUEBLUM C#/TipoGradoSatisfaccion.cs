@@ -1,0 +1,1 @@
+public enum TipoGradoSatisfaccion{Bueno, Regular, Malo};
