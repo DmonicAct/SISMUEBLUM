@@ -10,6 +10,10 @@ public class Local{
 		this.local_direccion = local_direccion;
 		
 	}
+	
+	public Local(){
+		local_vendedores = new List<Vendedor>();
+	}
 
 	public int local_id{
 		set{
