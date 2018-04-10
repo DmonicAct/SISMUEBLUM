@@ -58,7 +58,7 @@ public class exhibicion extends Local {
 	public void agregarProducto(Producto p, int cant){
 	}
 	
-	public Producto devolverProducto(Producto p, int cant){
+	public void devolverProducto(Producto p, int cant){
 	}
 	
 	public void devolverAlmacen(listProductos listP, listCantidad listC){
