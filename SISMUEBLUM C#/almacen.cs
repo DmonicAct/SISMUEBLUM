@@ -8,6 +8,9 @@ public class Almacen : Local {
 		listaStockCant = new ArrayList<int>();
 	}
 	
+	~Almacen(){
+	}
+	
 	public void mostrarAlmacen(){
 	
 	}
