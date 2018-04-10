@@ -1,73 +1,63 @@
 public class Exhibicion {
-
-	private string direccion;
-	private string distrito;
-	private string ciudad;
-	private string fechaIni;
-	private string fechaFin;
-	private Cliente cliente;
+	
+	private DiaSemana diaIni;
+	private DiaSemana diaFin;
+	private string horaIni;
+	private string horaFin;
+	//private Cliente cliente;
 	///asignar cliente a exhibicion
 
 	public Exhibicion(){
 		
 	}
 
-	public Exhibicion(string direccion,string distrito,string ciudad,string fechaIni,string fechaFin, Cliente cliente){
-		this.direccion = direccion;
-		this.distrito = distrito;
-		this.ciudad = ciudad;
-		this.fechaIni = fechaIni;
-		this.fechaFin = fechaFin;
-		this.cliente = cliente;
+	public Exhibicion(DateTime diaIni,DateTime diaFin,string horaIni, string horaFin/*, Cliente cliente*/){		
+		this.diaIni = diaIni;
+		this.diaFin = diaFin;
+		
+		this.horaIni = horaIni;
+		this.horaFin = horaFin;
+		
 	}	
 
 	
-	public string Direccion{
+	
+	public date diaIni{
 		get{
-			return _direccion;
+			return _diaIni;
 		}
 		set{
-			_direccion = value;
-		}
-	}
-	
-	
-	public string Distrito{
-		get{
-			return _distrito;
-		}
-		set{
-			_distrito = value;
-		}
-	}
-	
-	public string Ciudad{
-		get{
-			return _ciudad;
-		}
-		set{
-			_ciudad = value;
+			_diaIni = value;
 		}
 	}
 		
-	
-	public date FechaFin{
+	public date diaFin{
 		get{
-			return _fechaFin;
+			return _diaFin;
 		}
 		set{
-			_fechaFin = value;
+			_diaFin = value;
+		}
+	}
+	
+	public date horaFin{
+		get{
+			return _horaFin;
+		}
+		set{
+			_horaFin = value;
+		}
+	}
+		
+	public date horaIni{
+		get{
+			return _horaIni;
+		}
+		set{
+			_horaIni = value;
 		}
 	}
 	
 	
-	public date FechaIni{
-		get{
-			return _fechaIni;
-		}
-		set{
-			_fechaIni = value;
-		}
-	}
 	
 }
