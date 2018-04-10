@@ -5,9 +5,11 @@ public class Local{
 	private int local_telef;
 	private List<Vendedor> local_vendedores;
 
-	public Local(int local_id, string local_direccion){
+	public Local(int local_id, string local_direccion, int local_telef){
 		this.local_id = local_id;
 		this.local_direccion = local_direccion;
+        this.local_telef = local_telef;
+		local_vendedores = new List<Vendedor>();
 		
 	}
 	
@@ -56,11 +58,7 @@ public class Local{
 	}
 
 	public string consultarVendedores(){
-		string cadena = "";
-		foreach(Vendedor v in this.local_vendedores){
-			////////cadena = cadena + v.consultarDatos() + "\n";
-		}
-		return cadena;
+    
 	}
 
 }
