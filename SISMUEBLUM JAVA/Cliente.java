@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
+import java.util.*;
 public abstract class Cliente
 {
 	private int codigoCliente;
-	private string telefono;
-	private string correo;
-	private string direccion;
-	private DateTime fechaDeRegistro;
-	private List<Venta> ventas;
+	private String telefono;
+	private String correo;
+	private String direccion;
+	private Date fechaDeRegistro;
+	private ArrayList<Venta> ventas;
 
 	public Cliente() { }
-	public Cliente(string telefono, string correo, string direccion)
+	public Cliente(String telefono, String correo, String direccion)
 	{
 		this.telefono = telefono;
 		this.correo = correo;
 		this.direccion = direccion;
-		this.fechaDeRegistro = DateTime.Today;
-		ventas = new List<Venta>();
+		this.fechaDeRegistro = new Date();
+		ventas = new ArrayList<Venta>();
 	}
 
 	public int getCodigoCliente (){ 
@@ -51,7 +45,7 @@ public abstract class Cliente
 	
 	public void registrarVenta(Venta v)
 	{
-
+		int n;
 	}
 	
 }
