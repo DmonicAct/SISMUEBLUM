@@ -69,7 +69,7 @@ public class Exhibicion : Local {
 	}
 	
 	
-	public producto devolverProducto(Producto p , int cant){
+	public void devolverProducto(Producto p , int cant){
 	
 	}	
 	
