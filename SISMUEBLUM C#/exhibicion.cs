@@ -6,11 +6,8 @@ public class Exhibicion : Local {
 	private TimeSpan  horaIni;
 	private TimeSpan  horaFin;
 	private List<Producto> listProductos;
-	private List<int> listCantidad;
-	
-	
+	private List<int> listCantidad;	
 	//private Cliente cliente;
-	///asignar cliente a exhibicion
 
 	public Exhibicion(){
 		listProductos = new List<Producto>();
@@ -26,7 +23,8 @@ public class Exhibicion : Local {
 		listCantidad = new List<int>();
 	}	
 
-	
+	~Exhibicion(){
+	}
 	
 	public DiaSemana diaIni{
 		get{
