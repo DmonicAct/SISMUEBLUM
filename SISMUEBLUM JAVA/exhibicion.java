@@ -1,63 +1,69 @@
-public class exhibicion {
-	private String direccion;
-	private String distrito;
-	private String ciudad;
-	private String fechaIni;
-	private String fechaFin;
-	private Cliente cli;
-	
-	//asignar cliente a exhibicion
+import java.time.LocalTime;
+
+public class exhibicion extends Local {
+	private DiaSemana diaIni;
+	private DiaSemana diaFin;
+	private LocalTime horaIni;
+	private LocalTime horaFin;
+	private List<Producto> listProductos;
+	private List<int> listCantidad; 
+	//private Cliente cli;
 	
 	public exhibicion(){
-		
+		listProductos = new ArrayList<Producto>();
+		listCantidad = new ArrayList<int>();
 	}
 	
-	public exhibicion(String dirEnt, String disEnt, String ciuEnt, String fIni, String fFin, Cliente c){
-		this.direccion = dirEnt;
-		this.distrito = disEnt;
-		this.ciudad = ciuEnt;
-		this.fechaIni = fIni;
-		this.fechaFin = fFin;
-		this.cli = c;
+	public exhibicion(DiaSemana dIni, DiaSemana dFin, int hIni, int hFin/*, Cliente c*/){
+		listProductos = new ArrayList<Producto>();
+		listCantidad = new ArrayList<int>();
+		this.diaIni = dIni;
+		this.diaFin = dFin;
+		this.horaIni = LocalTime.of(hIni);
+		this.horaFin = LocalTime.of(hFin);
 	}
 	
-	public String getDireccion(){
-		return direccion;
+	public DiaSemana getDiaIni(){
+		return diaIni;
 	}
 	
-	public void setDireccion(String dirEnt){
-		this.direccion = dirEnt;
+	public void setDiaIni(DiaSemana dIni){
+		this.diaIni = dIni;
 	}
 	
-	public String getDistrito(){
-		return distrito;
+	public DiaSemana getDiaFin(){
+		return diaFin;
 	}
 	
-	public void setDistrito(String disEnt){
-		this.distrito = disEnt;
+	public void setDiaFin(DiaSemana dFin){
+		this.diaFin = dFin;
+	}	
+	
+	public LocalTime getHoraIni(){
+		return horaIni;
 	}
 	
-	public String getCiudad(){
-		return ciudad;
+	public void setHoraIni(int hIni){
+		this.horaIni = LocalTime.of(hIni);
 	}
 	
-	public void setCiudad(String ciuEnt){
-		this.ciudad = ciuEnt;
+	public LocalTime getHoraFin(){
+		return horaFin;
 	}
 	
-	public String getFechaIni(){
-		return fechaIni;
+	public void setHoraFin(int hFin){
+		this.horaFin = LocalTime.of(hFin);
 	}
 	
-	public void setFechaIni(String fIni){
-		this.fechaIni = fFin;
+	public void agregarProducto(Producto p, int cant){
 	}
 	
-	public String getFechaFin(){
-		return fechaFin;
+	public Producto devolverProducto(Producto p, int cant){
 	}
 	
-	public void setFechaFin(String fFin){
-		this.fechaFin = fFin;
+	public void devolverAlmacen(listProductos listP, listCantidad listC){
+	}	
+	
+	public void mostrarProductos(){
 	}
 }
