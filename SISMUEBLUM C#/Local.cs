@@ -2,6 +2,7 @@ using System;
 public class Local{
 	private int local_id;
 	private string local_direccion;
+	private int local_telef;
 	private List<Vendedor> local_vendedores;
 
 	public Local(int local_id, string local_direccion){
@@ -25,6 +26,15 @@ public class Local{
 		}
 		get{
 			return local_direccion;
+		}
+	}
+	
+	public int local_telef{
+		set{
+			this.local_telef = value;
+		}
+		get{
+			return local_telef;
 		}
 	}
 
