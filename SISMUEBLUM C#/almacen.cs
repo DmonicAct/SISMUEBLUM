@@ -1,29 +1,33 @@
-public class almacen {
+public class Almacen {
 
 	private string direccion;
 	private int telefono;
-	private List<productos> listaStockProd;
+	private List<Productos> listaStockProd;
+	private List<int>  listaStockProdInt;
 
-	public almacen(){
-		listaStockProd = new ArrayList<productos>();
-		
+	public Almacen(){
+		listaStockProd = new ArrayList<Productos>();		
+		listaStockProdInt = new ArrayList<int>();
 	}
 
-	public void setDireccion(string direccion){
-		this.direccion = direccion;
+	public string Direccion{
+		get{
+			return _direccion;
+		}
+		set{
+			_direccion = value;
+		}
 	}
-
-	public string getDireccion(){
-		return this.direccion;
+	
+	public int Telefono{
+		get{
+			return _telefono;
+		}
+		set{
+			_telefono = value;
+		}
 	}
-
-	public void setTelefono(string telefono){
-		this.telefono = telefono;
-	}
-
-	public string getTelefono(){
-		return this.telefono;
-	}
-
+	
+	
 
 }

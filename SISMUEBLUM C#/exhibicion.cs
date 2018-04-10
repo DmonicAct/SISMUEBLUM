@@ -1,4 +1,4 @@
-public class exhibicion {
+public class Exhibicion {
 
 	private string direccion;
 	private string distrito;
@@ -8,59 +8,66 @@ public class exhibicion {
 	private Cliente cliente;
 	///asignar cliente a exhibicion
 
-	public exhibicion(){
+	public Exhibicion(){
 		
 	}
 
-	public exhibicion(string direccion,string distrito,string ciudad,string fechaIni,string fechaFin/*Cliente cliente*/){
+	public Exhibicion(string direccion,string distrito,string ciudad,string fechaIni,string fechaFin, Cliente cliente){
 		this.direccion = direccion;
 		this.distrito = distrito;
 		this.ciudad = ciudad;
 		this.fechaIni = fechaIni;
 		this.fechaFin = fechaFin;
-		//this.cliente = cliente;
+		this.cliente = cliente;
 	}	
 
-	public void setDireccion(string dirEnt){
-		this.direccion = dirEnt;
+	
+	public string Direccion{
+		get{
+			return _direccion;
+		}
+		set{
+			_direccion = value;
+		}
+	}
+	
+	
+	public string Distrito{
+		get{
+			return _distrito;
+		}
+		set{
+			_distrito = value;
+		}
+	}
+	
+	public string Ciudad{
+		get{
+			return _ciudad;
+		}
+		set{
+			_ciudad = value;
+		}
 	}
 		
-	public string getDireccion(){
-		return direccion;
+	
+	public date FechaFin{
+		get{
+			return _fechaFin;
+		}
+		set{
+			_fechaFin = value;
+		}
 	}
 	
-
-	public void setDistrito(string disEnt){
-		this.distrito = disEnt;
-	}
-
-	public string getDistrito(){
-		return distrito;
-	}
-
-	public void setCiudad(string ciuEnt){
-		this.ciudad = ciuEnt;
-	}		
 	
-	public string getCiudad(){
-		return ciudad;
+	public date FechaIni{
+		get{
+			return _fechaIni;
+		}
+		set{
+			_fechaIni = value;
+		}
 	}
-		
-	public string setFechaIni(string fechaIni){
-		 this.fechaIni = fechaIni;
-	}
-
-	public String getFechaIni(){
-		return fechaIni;
-	}
-	
-
-	public void setFechaFin(string fechaFin){
-		this.fechaFin = fechaFin;
-	}
-	
-	public void getFechaFin(){
-		return fechaFin
-	}	
 	
 }

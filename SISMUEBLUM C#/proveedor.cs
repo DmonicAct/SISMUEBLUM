@@ -1,64 +1,76 @@
-public class Proveedor {
+public class Proovedor {
 	private int idProveedor;
 	private string nombre;
 	private string direccion; //metodo
-	private productos prod;
+	private List<Producto> listProd;
 	private string pais;
 	private string telefono;
 
 
-	public Proveedor(){
+	public Proovedor(){
 		
 	}
 	
-	public Proveedor(int idEnt, string nomEnt, productos p, string paisEnt, string tlfEnt){
+	public Proovedor(int idEnt, string nomEnt, productos prod, productos p, string paisEnt, string tlfEnt){
 		this.idProveedor = idEnt;
 		this.nombre = nomEnt;
+		this.productos = prod;
 		this.prod = p;
 		this.pais = paisEnt
 		this.telefono = tlfEnt;
 	}
 	
-	public void setProveedor(idEnt){
-		idProveedor = idEnt;
-	}
-
-	public int getProveedor(){
-		return this.idProveedor;
-	}
-	
-	public void setNombre(string nomEnt){
-		this.nombre = nomEnt;
-	}
-
-	public String getNombre(){
-		return this.nombre;
-	}
-
-	public void setDireccion(string direccion){
-		this.direccion = direccion;
-	}
-
-	public string getDireccion(){
-		return this.direccion;
-	}
-	
-	public void setPais(string paisEnt){
-		this.pais = paisEnt;
-	}
-
-	public string getPais(){
-		return this.pais;
-	}
-
-	public void setTelefono(string telefono){
-		this.telefono = telefono;
-	}
-
-	public string getTelefono(){
-		return this.telefono;
+	public int IdProveedor{
+		get{
+			return _idProveedor;
+		}
+		set{
+			_idProveedor = value;
+		}
 	}
 	
 	
+	public string Nombre{
+		get{
+			return _nombre;
+		}
+		set{
+			_nombre = value;
+		}
+	}
+
+	public string Direccion{
+		get{
+			return _direccion;
+		}
+		set{
+			_direccion = value;
+		}
+	}	
 	
+	public string Pais{
+		get{
+			return _pais;
+		}
+		set{
+			_pais = value;
+		}
+	}
+		
+	public string Telefono{
+		get{
+			return _telefono;
+		}
+		set{
+			_telefono = value;
+		}
+	}
+	
+	public void registrarProducto(){
+		
+	}
+	
+	public void eliminarProducto(){		
+		
+	}
 }
