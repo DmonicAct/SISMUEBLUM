@@ -73,7 +73,7 @@ public class Exhibicion : Local {
 	
 	}	
 	
-	public void devolverAlmacen(listProductos listP, listProd listaCant ){
+	public void devolverAlmacen(List<Producto> listP, List<int> listaCant ){
 	}
 	
 	
