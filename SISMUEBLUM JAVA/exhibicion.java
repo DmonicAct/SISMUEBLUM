@@ -1,6 +1,6 @@
 import java.time.LocalTime;
 
-public class exhibicion extends Local {
+public class Exhibicion extends Local {
 	private DiaSemana diaIni;
 	private DiaSemana diaFin;
 	private LocalTime horaIni;
@@ -9,12 +9,12 @@ public class exhibicion extends Local {
 	private List<int> listCantidad; 
 	//private Cliente cli;
 	
-	public exhibicion(){
+	public Exhibicion(){
 		listProductos = new ArrayList<Producto>();
 		listCantidad = new ArrayList<int>();
 	}
 	
-	public exhibicion(DiaSemana dIni, DiaSemana dFin, int hIni, int hFin/*, Cliente c*/){
+	public Exhibicion(DiaSemana dIni, DiaSemana dFin, int hIni, int hFin/*, Cliente c*/){
 		listProductos = new ArrayList<Producto>();
 		listCantidad = new ArrayList<int>();
 		this.diaIni = dIni;
