@@ -1,50 +1,64 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Local{
 	private int local_id;
-	private string local_direccion;
+	private String local_direccion;
+	private int local_telef;
 	private ArrayList<Vendedor> local_vendedores;
 
-	public Local(int local_id, string local_direccion){
-
+	public Local(int local_id, string local_direccion, int local_telef){
+		this.local_id = local_id;
+		this.local_direccion = local_direccion;
+        	this.local_telef = local_telef;
+		local_vendedores = new List<Vendedor>();
+		
+	}
+	
+	public Local(){
+		local_vendedores = new List<Vendedor>();
+	}
+	
+	public Local(){
+		local_vendedores = new ArrayList<Vendedor>();
 	}
 
-	public int local_id{
-		set{
-			this.local_id = value;
-		}
-		get{
-			return local_id;
-		}
+	public int getLocal_id(){
+		return local_id;
+	}
+	
+	public void setLocal_id(int local_id){
+		this.local_id = local_id;
+	}
+	
+	public String getLocal_direccion(){
+		return local_direccion;
+	}
+	
+	public void setLocal_direccion(String local_direccion){
+		this.local_direccion = local_direccion;
 	}
 
-	public string local_direccion{
-		set{
-			this.local_direccion = value;
-		}
-		get{
-			return local_direccion;
-		}
+	public List<Vendedor> getLocal_vendedores(){
+		return local_vendedores;
+	}
+	
+	public void setLocal_vendedores(List<Vendedor> local_vendedores)
+		this.local_vendedores = local_vendedores;
+	}
+	
+	public int getLocal_telef(){
+		return local_telef;
+	}
+	
+	public void setLocal_telef(int local_telef){
+		this.local_telef = local_telef;
 	}
 
-	public List<Vendedor> local_vendedores{
-		set{
-			this.local_vendedores = value;
-		}
-		get{
-			return local_vendedores;
-		}
-	}
 
 	public void agregarVendedor(Vendedor v){
 		local_vendedores.Add(v);
 	}
 
-	public string consultarVendedores(){
-		string cadena = "";
-		foreach(Vendedor v in this.local_vendedores){
-			////////cadena = cadena + v.consultarDatos() + "\n";
-		}
-		return cadena;
+	public String consultarVendedores(){
 	}
 
 }
