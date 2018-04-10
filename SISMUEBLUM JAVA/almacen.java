@@ -1,27 +1,21 @@
-public class almacen {
-	private String direccion;
-	private List<productos> listaSttockProd;
-	//Lista FechasProducos (Pedidos);
-	//Lista StockProductos ;
-	private int telefono;
+public class Almacen extends Local{
+	private List<Producto> listaStockProd;
+	private List<int> listaStockCant;
 	
 	public almacen(){
-		listaSttockProd = new ArrayList<productos>();
+		listaStockProd = new ArrayList<Producto>();
+		listaStockCant = new ArrayList<Catn>();
 	}
 	
-	public String getDireccion(){
-		return direccion;
+	public void mostrarAlmacen(){
 	}
 	
-	public void setDireccion(String dirEnt){
-		this.direccion = dirEnt;
+	public void registrarProducto(Producto p, int cant){
 	}
 	
-	public String getTelefono(){
-		return telefono;
+	public void sacarProductos(Producto p, int cant){
 	}
 	
-	public void setTelefono(String tlfEnt){
-		this.telefono = tlfEnt;
-	}	
+	public void enviarAExhibicion(listaStockProd p, listStockCant c){
+	}
 }
