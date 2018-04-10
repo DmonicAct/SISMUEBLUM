@@ -1,18 +1,18 @@
 public class Almacen : Local {
 
-	private List<Productos> listaStockProd;
-	private List<int>  listaStockProdInt;
+	private List<Producto> listaStockProd;
+	private List<int>  listaStockCant;
 
 	public Almacen(){
-		listaStockProd = new ArrayList<Productos>();		
-		listaStockProdInt = new ArrayList<int>();
+		listaStockProd = new ArrayList<Producto>();		
+		listaStockCant = new ArrayList<int>();
 	}
 	
 	public void mostrarAlmacen(){
 	
 	}
 	
-	puclic void registrarProducto(producto prod, int cantidad){
+	puclic void registrarProducto(Producto prod, int cantidad){
 	
 	}
 	
@@ -20,7 +20,7 @@ public class Almacen : Local {
 	
 	}
 	
-	public void enviarAExhibicion(listaStockProd list,listaStockProdInt c){
+	public void enviarAExhibicion(List<Productos> p, List<int> c){
 	
 	}
 	
