@@ -8,14 +8,14 @@ public class Proovedor {
 
 
 	public Proovedor(){
-		
+		listProd = new List<Producto>;
 	}
 	
-	public Proovedor(int idEnt, string nomEnt, productos prod, productos p, string paisEnt, string tlfEnt){
+	public Proovedor(int idEnt, string nomEnt, string direccion, string paisEnt, string tlfEnt){
+		listProd = new List<Producto>;
 		this.idProveedor = idEnt;
+		this.direccion = direccion;
 		this.nombre = nomEnt;
-		this.productos = prod;
-		this.prod = p;
 		this.pais = paisEnt
 		this.telefono = tlfEnt;
 	}
