@@ -1,19 +1,20 @@
-public class proveedor {
+public class Proveedor {
 	private int idProveedor;
 	private String nombre;
 	private String direccion;
-	private productos prod;
+	private List<Producto> listProd;
 	private String pais;
-	private String telefono
+	private String telefono;
 	
-	public proveedor(){
-		
+	public Proveedor(){
+		listProd = new ArrayList<Producto>();
 	}
 	
-	public proveedor(int idEnt, String nomEnt, productos p, String paisEnt, String tlfEnt){
+	public Proveedor(int idEnt, String nomEnt, String dirEnt, String paisEnt, String tlfEnt){
+		listProd = new ArrayList<Producto>();
 		this.idProveedor = idEnt;
 		this.nombre = nomEnt;
-		this.prod = p;
+		this.direccion = dirEnt;
 		this.pais = paisEnt;
 		this.telefono = tlfEnt;
 	}
@@ -57,4 +58,10 @@ public class proveedor {
 	public void setTelefono(String tlfEnt){
 		this.telefono = tlfEnt;
 	}	
+	
+	public void registrarProducto(Producto p){
+	}	
+	
+	public void eliminarProducto(Producto p){
+	}
 }
