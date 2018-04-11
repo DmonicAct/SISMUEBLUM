@@ -50,7 +50,7 @@ public class Venta{
 	public string direccionDeDespacho{get{return this._direccionDeDespacho;} set{this._direccionDeDespacho = value;}}
 	public TipoGradoSatisfaccion satisfaccion{get{return this._satisfaccion;} set{this._satisfaccion = value;}}
 	
-	public void añadirProducto(Producto producto, double cantidad, double descuento){
+	public void anhadirProducto(Producto producto, double cantidad, double descuento){
 		DetalleVenta item;
 		if (descuento>0) item = new DetalleVenta(producto, cantidad, descuento);
 		else item = new DetalleVenta(producto, cantidad);
