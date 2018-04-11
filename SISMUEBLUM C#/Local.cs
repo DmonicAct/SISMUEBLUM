@@ -1,64 +1,68 @@
 using System;
 public class Local{
-	private int local_id;
-	private string local_direccion;
-	private int local_telef;
-	private List<Vendedor> local_vendedores;
+	private int _id;
+	private string _direccion;
+	private int _telef;
+	private List<Vendedor> _vendedores;
 
-	public Local(int local_id, string local_direccion, int local_telef){
-		this.local_id = local_id;
-		this.local_direccion = local_direccion;
-        this.local_telef = local_telef;
-		local_vendedores = new List<Vendedor>();
+	public Local(int _id, string _direccion, int _telef){
+		this._id = _id;
+		this._direccion = _direccion;
+        	this._telef = _telef;
+		_vendedores = new List<Vendedor>();
 		
 	}
 	
 	public Local(){
-		local_vendedores = new List<Vendedor>();
+		_vendedores = new List<Vendedor>();
+	}
+	
+	~Local(){
 	}
 
 	public int local_id{
 		set{
-			this.local_id = value;
+			this._id = value;
 		}
 		get{
-			return local_id;
+			return _id;
 		}
 	}
 
 	public string local_direccion{
 		set{
-			this.local_direccion = value;
+			this._direccion = value;
 		}
 		get{
-			return local_direccion;
+			return _direccion;
 		}
 	}
 	
 	public int local_telef{
 		set{
-			this.local_telef = value;
+			this._telef = value;
 		}
 		get{
-			return local_telef;
+			return _telef;
 		}
 	}
 
 	public List<Vendedor> local_vendedores{
 		set{
-			this.local_vendedores = value;
+			this._vendedores = value;
 		}
 		get{
-			return local_vendedores;
+			return _vendedores;
 		}
 	}
 
 	public void agregarVendedor(Vendedor v){
-		local_vendedores.Add(v);
+		_vendedores.Add(v);
 	}
 
 	public string consultarVendedores(){
-    
+    		string cadena = "";
+		return cadena;
 	}
 
 }
