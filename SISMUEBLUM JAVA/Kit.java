@@ -8,7 +8,7 @@ public class Kit extends Producto{
 		componentes = new ArrayList<ComponenteDeKit>();
 	}
 	
-	public void añadirComponente(Producto producto, double cantidad){
+	public void anhadirComponente(Producto producto, double cantidad){
 		ComponenteDeKit componente = new ComponenteDeKit(producto, cantidad);
 		componentes.add(componente);
 	}

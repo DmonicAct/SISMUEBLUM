@@ -59,7 +59,7 @@ public class Venta{
 	public TipoGradoSatisfaccion getSatisfaccion () {return this.satisfaccion;}
 	public void setSatisfaccion(TipoGradoSatisfaccion valor){this.satisfaccion = valor;}
 	
-	public void añadirProducto(Producto producto, double cantidad, double descuento){
+	public void anhadirProducto(Producto producto, double cantidad, double descuento){
 		DetalleVenta item;
 		if (descuento>0) item = new DetalleVenta(producto, cantidad, descuento);
 		else item = new DetalleVenta(producto, cantidad);
