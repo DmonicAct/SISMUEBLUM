@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 class Gerente : Usuario ,IConsultable
 {
-
+	public Gerente (){
+		
+	}
 	public Gerente(string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string username, string password)
 		: base(nombre, apellidoPaterno, apellidoMaterno, dni, username, password, 0)
 	{

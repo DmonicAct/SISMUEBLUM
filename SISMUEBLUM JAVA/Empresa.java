@@ -5,7 +5,10 @@ public class Empresa extends Cliente implements IConsultable
 	private String ruc;
 	private String razon;
 	private String representante;
-
+	
+	public Empresa(){
+		
+	}
 	public Empresa(String ruc, String razon, String representante,String telefono, String correo, String direccion) 
 	{
 		super(telefono, correo, direccion);

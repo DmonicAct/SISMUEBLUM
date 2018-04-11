@@ -13,15 +13,25 @@ public abstract class Cliente
 	private string direccion;
 	private DateTime fechaDeRegistro;
 	private List<Venta> ventas;
+	private Vendedor vendedor;
 
-	public Cliente() { }
-	public Cliente(string telefono, string correo, string direccion)
+	public Cliente() {
+		
+	}
+	public Cliente(string telefono, string correo, string direccion,Vendedor v)
 	{
+		this.vendedor = v
 		this.telefono = telefono;
 		this.correo = correo;
 		this.direccion = direccion;
 		this.fechaDeRegistro = DateTime.Today;
 		ventas = new List<Venta>();
+	}
+	public Vendedor getVendedor(){
+		return this.vendedor;
+	}
+	public void setVendedor(Vendedor value){
+		this.vendedor = value;
 	}
 
 	public int getCodigoCliente (){ 

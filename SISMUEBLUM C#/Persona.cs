@@ -12,6 +12,9 @@ public class Persona : Cliente, IConsultable
 	private string apMat;
 	private string dni;
 
+	public Persona(){
+		
+	}
 	public Persona(string nombre, string apPat,string apMat, string dni, string telefono, string correo, string direccion) : 
 		base(telefono, correo, direccion)
 	{

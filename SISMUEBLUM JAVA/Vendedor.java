@@ -12,7 +12,10 @@ public class Vendedor extends Usuario implements IConsultable
 	private int horasMensuales;
 	private int horasCumplidasMensuales;
 	private ArrayList<Venta> ventas;
-
+	
+	public Vendedor(){
+		
+	}
 	public Vendedor(String nombre, String apellidoPaterno, String apellidoMaterno, String dni, String username, String password, 
 		 String sexo, String seguro,String domicilio,String informacion){
 		super(nombre, apellidoPaterno, apellidoMaterno, dni, username, password, 1);

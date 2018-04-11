@@ -16,6 +16,9 @@ public abstract class Usuario
 	private String password;
 	private int prioridad; // 1 para vendedor y 0 para gerente
 
+	public Usuario(){
+		
+	}
 	public Usuario(String nombre, String apellidoPaterno,String apellidoMaterno, String dni, String username,String password,int prioridad)
 	{
 		this.nombre = nombre;

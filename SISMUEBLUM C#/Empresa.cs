@@ -10,6 +10,9 @@ public class Empresa : Cliente,IConsultable
 	private string razon;
 	private string representante;
 
+	public Empresa(){
+		
+	}
 	public Empresa(string ruc, string razon, string representante,string telefono, string correo, string direccion) : base(telefono, correo, direccion)
 	{
 		this.ruc = ruc;

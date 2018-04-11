@@ -18,6 +18,9 @@ public class Vendedor : Usuario,IConsultable
 	private int horasCumplidasMensuales;
 	private List<Venta> ventas;
 
+	public Vendedor() {
+		
+	}
 	public Vendedor(string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string username, string password, 
 		 string sexo,string seguro,string domicilio,string informacion) :
 		base(nombre, apellidoPaterno, apellidoMaterno, dni, username, password, 1){
@@ -85,7 +88,7 @@ public class Vendedor : Usuario,IConsultable
 
 	public void registrarCliente()
 	{
-
+		Cliente cli ;
 	}
 }
 

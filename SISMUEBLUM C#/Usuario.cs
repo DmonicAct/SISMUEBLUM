@@ -19,6 +19,9 @@ public abstract class Usuario
 	private string password;
 	private int prioridad; // 1 para vendedor y 0 para gerente
 
+	public Usuario(){
+		
+	}
 	public Usuario(string nombre, string apellidoPaterno,string apellidoMaterno, string dni, string username,string password,int prioridad)
 	{
 		this.nombre = nombre;

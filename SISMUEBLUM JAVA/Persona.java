@@ -5,7 +5,10 @@ public class Persona extends  Cliente implements IConsultable
 	private String apPat;
 	private String apMat;
 	private String dni;
-
+	
+	public Persona(){
+		
+	}
 	public Persona(String nombre, String apPat,String apMat, String dni, String telefono, String correo, String direccion)             
 	{
 		super(telefono, correo, direccion);

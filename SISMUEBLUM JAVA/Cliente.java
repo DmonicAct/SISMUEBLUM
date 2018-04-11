@@ -7,17 +7,26 @@ public abstract class Cliente
 	private String direccion;
 	private Date fechaDeRegistro;
 	private ArrayList<Venta> ventas;
-
-	public Cliente() { }
-	public Cliente(String telefono, String correo, String direccion)
+	private Vendedor vendedor;
+	
+	public Cliente() { 
+		
+	}
+	public Cliente(String telefono, String correo, String direccion,Vendedor vendedor)
 	{
+		this.vendedor=vendedor;
 		this.telefono = telefono;
 		this.correo = correo;
 		this.direccion = direccion;
 		this.fechaDeRegistro = new Date();
 		ventas = new ArrayList<Venta>();
 	}
-
+	public Vendedor getVendedor (){ 
+		return vendedor; 
+	}
+	public void setVendedor(Vendedor value){
+		 vendedor = value; 
+	}
 	public int getCodigoCliente (){ 
 		return codigoCliente; 
 	}

@@ -1,7 +1,10 @@
 import java.util.*;
 class Gerente extends Usuario implements IConsultable
 {
-
+	
+	public Gerente(){
+		
+	}
 	public Gerente(String nombre, String apellidoPaterno, String apellidoMaterno, String dni, String username, String password)
 		
 	{
