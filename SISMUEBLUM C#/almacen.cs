@@ -1,32 +1,32 @@
-public class Almacen {
+public class Almacen : Local {
 
-	private string direccion;
-	private int telefono;
-	private List<Productos> listaStockProd;
-	private List<int>  listaStockProdInt;
+	private List<Producto> listaStockProd;
+	private List<int>  listaStockCant;
 
 	public Almacen(){
-		listaStockProd = new ArrayList<Productos>();		
-		listaStockProdInt = new ArrayList<int>();
-	}
-
-	public string Direccion{
-		get{
-			return _direccion;
-		}
-		set{
-			_direccion = value;
-		}
+		listaStockProd = new ArrayList<Producto>();		
+		listaStockCant = new ArrayList<int>();
 	}
 	
-	public int Telefono{
-		get{
-			return _telefono;
-		}
-		set{
-			_telefono = value;
-		}
+	~Almacen(){
 	}
+	
+	public void mostrarAlmacen(){
+	
+	}
+	
+	puclic void registrarProducto(Producto prod, int cantidad){
+	
+	}
+	
+	public void sacarProducto(Producto p, int cant){
+	
+	}
+	
+	public void enviarAExhibicion(List<Productos> p, List<int> c){
+	
+	}
+	
 	
 	
 

@@ -20,6 +20,9 @@ public class Proovedor {
 		this.telefono = tlfEnt;
 	}
 	
+	~Proveedor(){
+	}
+	
 	public int IdProveedor{
 		get{
 			return _idProveedor;

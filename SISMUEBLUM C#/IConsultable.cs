@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio2
-{
-    public interface IConsultable {
-        string consultarDatos();
-    }
+
+public interface IConsultable {
+	string consultarDatos();
 }
+

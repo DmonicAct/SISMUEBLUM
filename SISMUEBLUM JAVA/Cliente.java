@@ -1,39 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
+import java.util.*;
 public abstract class Cliente
 {
 	private int codigoCliente;
-	private string telefono;
-	private string correo;
-	private string direccion;
-	private DateTime fechaDeRegistro;
-	private List<Venta> ventas;
+	private String telefono;
+	private String correo;
+	private String direccion;
+	private Date fechaDeRegistro;
+	private ArrayList<Venta> ventas;
 	private Vendedor vendedor;
-
-	public Cliente() {
+	
+	public Cliente() { 
 		
 	}
-	public Cliente(string telefono, string correo, string direccion,Vendedor v)
+	public Cliente(String telefono, String correo, String direccion,Vendedor vendedor)
 	{
-		this.vendedor = v
+		this.vendedor=vendedor;
 		this.telefono = telefono;
 		this.correo = correo;
 		this.direccion = direccion;
-		this.fechaDeRegistro = DateTime.Today;
-		ventas = new List<Venta>();
+		this.fechaDeRegistro = new Date();
+		ventas = new ArrayList<Venta>();
 	}
-	public Vendedor getVendedor(){
-		return this.vendedor;
+	public Vendedor getVendedor (){ 
+		return vendedor; 
 	}
 	public void setVendedor(Vendedor value){
-		this.vendedor = value;
+		 vendedor = value; 
 	}
-
 	public int getCodigoCliente (){ 
 		return codigoCliente; 
 	}
@@ -61,7 +54,7 @@ public abstract class Cliente
 	
 	public void registrarVenta(Venta v)
 	{
-
+		int n;
 	}
 	
 }

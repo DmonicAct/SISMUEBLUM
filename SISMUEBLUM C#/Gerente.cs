@@ -4,24 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio2
+
+class Gerente : Usuario ,IConsultable
 {
-    class Gerente : Usuario
-    {
+	public Gerente (){
+		
+	}
+	public Gerente(string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string username, string password)
+		: base(nombre, apellidoPaterno, apellidoMaterno, dni, username, password, 0)
+	{
+	}
 
-        public Gerente(string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string username, string password, 
-            bool prioridad) : base(nombre, apellidoPaterno, apellidoMaterno, dni, username, password, prioridad)
-        {
-        }
+	public void consultarVendedoresSede(string sede)
+	{
 
-        public void consultarVendedoresSede(string sede)
-        {
+	}
+   
+	public void asignarVendedorSede(string dniVend,string sede)
+	{
 
-        }
-       
-        public void asignarVendedorSede(Vendedor v,string sede)
-        {
+	}
+	
+	public void moverReasignarCliente(string dniVend, string dniCli)
+	{
 
-        }
-    }
+	}
+
+	public void emitirReporteVendedor(string dniVend)
+	{
+
+	}
+
+	public void registrarVendedor(string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string username, string password,
+		string sexo, string seguro, string domicilio, string informacion)
+	{
+		Vendedor v;
+		v = new Vendedor(nombre, apellidoPaterno, apellidoMaterno, dni, username, password,
+			sexo, seguro, domicilio, informacion);
+	}
+
+	public void eliminarVendedor(string dniVend)
+	{
+
+	}
+	public void revisarCliente(string dni)
+	{
+
+	}
+
+	public string consultarDatos()
+	{
+		throw new NotImplementedException();
+	}
 }
+
